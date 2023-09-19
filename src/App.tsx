@@ -6,7 +6,7 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UM COS420 with React Hooks and TypeScript, Hello World!
+                UD CISC275 with React Hooks and TypeScript
             </header>
             <h1>This is header text</h1>;
             <ul>
@@ -16,21 +16,32 @@ function App(): JSX.Element {
             </ul>
             <div>
                 <h1>Hello World</h1>
-                <img src="../assets/images/pet-ada.jpg" alt="A picture of my cat Ada" />
-            </div>;
+                <img
+                    src="../assets/images/pet-ada.jpg"
+                    alt="A picture of my cat Ada"
+                />
+            </div>
+            ;
             <div>
-        <Button onClick={ () => console.log("Hello World!") }>Log Hello World</Button>
-    </div>;
-    <div>
-        <Container>
-            <Row>
-                <Col> <div className="red-rectangle"> </div></Col>
-                <Col>
-                <div className="red-rectangle"> </div>  
-                </Col>
-            </Row>
-        </Container>
-    </div>;
+                <Button onClick={() => console.log("Hello World!")}>
+                    Log Hello World
+                </Button>
+            </div>
+            ;
+            <div>
+                <Container>
+                    <Row>
+                        <Col>
+                            {" "}
+                            <div className="red-rectangle"> </div>
+                        </Col>
+                        <Col>
+                            <div className="red-rectangle"> </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            ;
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Gabriel J Fitzpatrick
@@ -40,8 +51,10 @@ function App(): JSX.Element {
 }
 
 export function AppButton(): JSX.Element {
-    return <div>
-        <Button>Click Me</Button>
-    </div>
+    return (
+        <div>
+            <Button>Click Me</Button>
+        </div>
+    );
 }
 export default App;
